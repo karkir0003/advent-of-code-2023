@@ -40,7 +40,6 @@ def get_accurate_number(line):
         else:
             for word in spelled_digits.keys():
                 if (line.startswith(word, i)):
-                    print(f'hit and word is {word} starting at index {i}')
                     first_digit = spelled_digits[word]
                     break
             if (first_digit):
@@ -74,7 +73,6 @@ def better_calc_sum_cali_values(path = "input.txt"):
 
 
 def main():
-    #print(get_accurate_number('ninesevensrzxkzpmgz8kcjxsbdftwoner'))
     print(f'total calibration value: {better_calc_sum_cali_values()}')
 
 if __name__ == '__main__':
