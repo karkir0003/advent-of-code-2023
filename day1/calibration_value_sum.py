@@ -47,8 +47,6 @@ def calc_sum_cali_values(path = "input.txt"):
     total = 0
     with open(path, "r") as f:
         for line in f.readlines():
-            print(f'line: {line}')
-            print(f'num: {get_number(line)}')
             total = total + get_number(line)
     return total
 
